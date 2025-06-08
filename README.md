@@ -56,13 +56,15 @@ Implementar un pipeline ETL para el procesamiento eficiente y escalable de grand
 - **Visualización**: Data Studio / Looker Studio  
 
 ### Estructura del repositorio  
-├── data/ # Scripts de descarga y preprocesado
-├── etl/ # Código del pipeline ETL
-├── analytics/ # Notebooks de EDA
-├── dashboard/ # Definición del dashboard
-├── docs/ # Documentación adicional
-└── README.md # Descripción del proyecto
+- **data**: Scripts de descarga y preprocesado
+- **etl**: Código del pipeline ETL
+- **analytics**: Notebooks de EDA
+- **dashboard**: Definición del dashboard
+- **docs**: Documentación adicional
+- **README.md**: Descripción del proyecto
 
+## Referencias
+- Hou, Y., Li, J., He, Z., Yan, A., Chen, X. & McAuley, J. (2024). _Bridging Language and Items for Retrieval and Recommendation_. arXiv preprint arXiv:2403.03952.
 
 ---
 
@@ -102,11 +104,13 @@ Implement an ETL pipeline for the efficient and scalable processing of large amo
 - **Orchestration**: Airflow / Cloud Composer  
 - **Visualization**: Data Studio / Looker Studio  
 
-### Repository Structure  
+### Repository Structure
+- **data**: Download and preprocessing scripts  
+- **etl**: ETL pipeline code  
+- **analytics**: EDA notebooks  
+- **dashboard**: Dashboard definitions  
+- **docs**: Additional documentation  
+- **README.md**: Project overview  
 
-├── data/ # Download & preprocessing scripts
-├── etl/ # ETL pipeline code
-├── analytics/ # EDA notebooks
-├── dashboard/ # Dashboard definitions
-├── docs/ # Additional documentation
-└── README.md # Project overview
+## References
+- Hou, Y., Li, J., He, Z., Yan, A., Chen, X. & McAuley, J. (2024). _Bridging Language and Items for Retrieval and Recommendation_. arXiv preprint arXiv:2403.03952.
