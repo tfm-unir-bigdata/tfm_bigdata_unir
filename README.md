@@ -53,7 +53,7 @@ Implementar un pipeline ETL para el procesamiento eficiente y escalable de grand
 - **Cloud**: Google Cloud Platform (BigQuery, Cloud Storage, Dataflow, Composer)  
 - **Lenguajes**: Python, SQL  
 - **Orquestación**: Airflow / Cloud Composer  
-- **Visualización**: Data Studio / Looker Studio  
+- **Visualización**: Power BI
 
 ### Estructura del repositorio  
 - **data**: Scripts de descarga y preprocesado
@@ -102,7 +102,7 @@ Implement an ETL pipeline for the efficient and scalable processing of large amo
 - **Cloud**: Google Cloud Platform (BigQuery, Cloud Storage, Dataflow, Composer)  
 - **Languages**: Python, SQL  
 - **Orchestration**: Airflow / Cloud Composer  
-- **Visualization**: Data Studio / Looker Studio  
+- **Visualization**: Power BI
 
 ### Repository Structure
 - **data**: Download and preprocessing scripts  
