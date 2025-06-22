@@ -56,11 +56,12 @@ Implementar un pipeline ETL para el procesamiento eficiente y escalable de grand
 - **Visualización**: Power BI
 
 ### Estructura del repositorio  
-- **data**: Scripts de descarga y preprocesado
+- **Analytics**: Notebooks de EDA
+- **Dashboard**: Definición del dashboard
+- **Data**: Scripts de descarga y preprocesado
+- **Dictionaries:** Diccionarios de países_ciudades y nombres_apellidos para la calidad de datos
+- **Docs**: Documentación adicional
 - **etl**: Código del pipeline ETL
-- **analytics**: Notebooks de EDA
-- **dashboard**: Definición del dashboard
-- **docs**: Documentación adicional
 - **README.md**: Descripción del proyecto
 
 ## Referencias
@@ -105,12 +106,13 @@ Implement an ETL pipeline for the efficient and scalable processing of large amo
 - **Visualization**: Power BI
 
 ### Repository Structure
-- **data**: Download and preprocessing scripts  
-- **etl**: ETL pipeline code  
-- **analytics**: EDA notebooks  
-- **dashboard**: Dashboard definitions  
-- **docs**: Additional documentation  
-- **README.md**: Project overview  
+- **Analytics**: Notebooks de EDA
+- **Dashboard**: Definition of the dashboard
+- **Data**: Download and preprocessing scripts
+- **Dictionaries:** Country_city and country_name dictionaries for data quality
+- **Docs**: Additional Documentation
+- **etl**: ETL pipeline code
+- **README.md**: Project description
 
 ## References
 - Hou, Y., Li, J., He, Z., Yan, A., Chen, X. & McAuley, J. (2024). _Bridging Language and Items for Retrieval and Recommendation_. arXiv preprint arXiv:2403.03952.
