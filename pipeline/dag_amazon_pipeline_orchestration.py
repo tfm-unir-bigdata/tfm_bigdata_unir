@@ -21,7 +21,7 @@ CLUSTER_CONFIG = {
     },
     "worker_config": {
         "num_instances": 2,
-        "machine_type_uri": "n1-standard-2",
+        "machine_type_uri": "e2-standard-2",
         "disk_config": {"boot_disk_type": "pd-standard", "boot_disk_size_gb": 50},
     },
     "config_bucket": GCS_BUCKET,
