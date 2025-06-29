@@ -35,13 +35,13 @@ Implementar un pipeline ETL para el procesamiento eficiente y escalable de grand
    (Total: 12 522 232 reseñas, 440 109 productos, 12 962 321 registros).
 
 2. **Arquitectura de datos**  
-   Definición de componentes (almacenamiento, procesamiento, integración), flujo de datos y tecnologías (BigQuery, Cloud Storage, Dataflow).
+   Definición de componentes (almacenamiento, procesamiento, integración), flujo de datos y tecnologías (BigQuery, Cloud Storage, Composer).
 
 3. **Análisis exploratorio (EDA)**  
    Evaluación de estructura, calidad, patrones y volumen de los datos seleccionados.
 
 4. **Desarrollo del pipeline ETL**  
-   Implementación de un workflow gobernado y altamente escalable en GCP, con extracción, transformación y enriquecimiento mediante Dataflow y Python.
+   Implementación de un workflow gobernado y altamente escalable en GCP, con extracción, transformación y enriquecimiento mediante Composer y Python.
 
 5. **Métricas (KPIs)**  
    Definición y seguimiento de indicadores de rendimiento del pipeline: tiempo de procesamiento, coste en la nube, calidad de datos.
@@ -50,18 +50,24 @@ Implementar un pipeline ETL para el procesamiento eficiente y escalable de grand
    Visualización de KPIs y principales hallazgos en un panel accesible para usuarios de Business Analytics.
 
 ### Plataforma y tecnologías  
-- **Cloud**: Google Cloud Platform (BigQuery, Cloud Storage, Dataflow, Composer)  
+- **Cloud**: Google Cloud Platform (BigQuery, Cloud Storage, Composer)  
 - **Lenguajes**: Python, SQL  
 - **Orquestación**: Airflow / Cloud Composer  
 - **Visualización**: Power BI
 
 ### Estructura del repositorio  
 - **Analytics**: Notebooks de EDA
-- **Dashboard**: Definición del dashboard
 - **Data**: Scripts de descarga y preprocesado
 - **Dictionaries:** Diccionarios de países_ciudades y nombres_apellidos para la calidad de datos
 - **Docs**: Documentación adicional
+	- **DashBoard**: Documentación del dashboard
+	- **data_models:** Documentación de los modelos de datos (Data Marts) en BigQuery
+	- **gcp_metrics:** Gráficas con las métricas de ejecución del pipeline
 - **etl**: Código del pipeline ETL
+	- **lk_bronze:** Notebooks de la capa Bronze
+	- **lk_silver:** Notebooks de la capa Silver
+	- **dlh_gold:** Notebooks de la capa Gold
+- **pipeline:** Archivo DAG y Python para Apache Airflow
 - **README.md**: Descripción del proyecto
 
 ## Referencias
@@ -85,13 +91,13 @@ Implement an ETL pipeline for the efficient and scalable processing of large amo
    (Total: 12,522,232 reviews, 440,109 products, 12,962,321 records).
 
 2. **Data Architecture**  
-   Define data architecture components (storage, processing, integration), data flow, and technologies (BigQuery, Cloud Storage, Dataflow).
+   Define data architecture components (storage, processing, integration), data flow, and technologies (BigQuery, Cloud Storage, Composer).
 
 3. **Exploratory Data Analysis (EDA)**  
    Assess data structure, quality, patterns, and volume for the selected subsets.
 
 4. **ETL Pipeline Development**  
-   Build a governed, highly scalable workflow on GCP using Dataflow and Python.
+   Build a governed, highly scalable workflow on GCP using Composer and Python.
 
 5. **Key Performance Indicators (KPIs)**  
    Define and monitor pipeline metrics: processing time, cloud cost, data quality.
@@ -100,18 +106,24 @@ Implement an ETL pipeline for the efficient and scalable processing of large amo
    Visualize KPIs and key insights in a dashboard for Business Analytics users.
 
 ### Platform & Technologies  
-- **Cloud**: Google Cloud Platform (BigQuery, Cloud Storage, Dataflow, Composer)  
-- **Languages**: Python, SQL  
+- **Cloud**: Google Cloud Platform (BigQuery, Cloud Storage, Composer)  
+- **Languages**: Python, PySpark, sql
 - **Orchestration**: Airflow / Cloud Composer  
 - **Visualization**: Power BI
 
 ### Repository Structure
 - **Analytics**: Notebooks de EDA
-- **Dashboard**: Definition of the dashboard
 - **Data**: Download and preprocessing scripts
 - **Dictionaries:** Country_city and country_name dictionaries for data quality
 - **Docs**: Additional Documentation
+	- **DashBoard**: Definition of the dashboard
+	- **data_models:** Documentation models (Data Marts) in BigQuery
+	- **gcp_metrics:** Pipeline execution metrics graphs
 - **etl**: ETL pipeline code
+	- **lk_bronze:** Notebooks Bronze layer
+	- **lk_silver:** Notebooks Silver layer
+	- **dlh_gold:** Notebooks Gold layer
+- **pipeline:** DAG and Python file for Apache Airflow
 - **README.md**: Project description
 
 ## References
